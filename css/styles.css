@@ -10,13 +10,14 @@
 
 html, body {
     width: 100%;
+    height: 100%;
     max-width: 100%;
 }
 
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 0, 0, 0.246));
 }
 
 header {
@@ -107,7 +108,7 @@ header h1 {
 }
 
 .card-text {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: rgba(50, 50, 50, 0.7);
     margin: 7px auto;
     transition: .4s ease-out;
@@ -138,9 +139,9 @@ header h1 {
     min-height: 415px;
     margin: 10px auto auto;
     padding-bottom: 15px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 0.25em;
-    border: 1px solid rgba(100, 100, 100, 0.3);
+    background: rgb(47, 47, 47);
+    border-radius: 0.75em;
+    border: 1px solid rgb(255, 255, 255);
     transition: .4s ease-out;
 }
 
@@ -149,31 +150,33 @@ header h1 {
     top: 15px;
     right: 15px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.9);
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 0.25em;
-    border: 1px solid rgba(50, 50, 50, 0.3);
+    color: rgba(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    
 }
 
 .modal-img {
     width: 150px;
     margin-top: 35px;
     border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .modal-name {
     margin-bottom: 5px;
+    color:rgb(255, 255, 255);
 }
 
 .modal-text {
-    color: rgba(50, 50, 50, 0.7);
+    color: rgb(255, 255, 255);
     margin: 10px;
 }
 
 .modal hr {
     width: 75%;
     margin: 25px auto 30px;
-    border-color: rgba(200, 200, 200, 0.2);
+    border-color: rgba(255, 255, 255);
 }
 
 .modal-btn-container {
@@ -246,10 +249,16 @@ header h1 {
     .card:hover {
         background: rgba(255, 255, 255, 1);
         border: 1px solid rgba(50, 50, 50, 0.9);
+        border-radius: 5em;
+        
     }
 
     .card:hover .card-text {
         color: rgba(25, 25, 25, 1); 
+    }
+
+    .card:hover .card-name {
+        color: rgb(0, 90, 35); 
     }
 
     .btn:hover {
